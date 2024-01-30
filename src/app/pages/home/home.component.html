@@ -1,0 +1,32 @@
+<div class="relative">
+  <app-navbar />
+  <div
+    [style.background]="'url(\'assets/images/bg.png\')'"
+    class="w-[100vw] h-[60vh] relative bg-no-repeat bg-gray-300 flex justify-center bg-contain md:bg-center md:object-cover md:bg-cover md:h-[80vh]"
+  >
+    <div class="relative max-w-[80rem] w-full h-full">
+      <div
+        class="max-w-[38rem] text-white absolute pb-[2rem] lg:pb-[10rem] flex flex-col bottom-2 px-4 md:px-0 md:bottom-10"
+      >
+        <span class="text-2xl md:text-5xl font-light pb-3 md:pb-6"
+          >FaceMash คืออะไร ?</span
+        >
+        <span class="indent-8 text-sm md:text-lg">
+          FaceMash เป็นเว็บไซต์ที่สร้างขึ้นโดยนักศึกษาชายมาร์ก ซูคเบอร์เก็ต
+          (Mark Zuckerberg) ในปี 2003 ขณะที่เขากำลังศึกษาที่มหาวิทยาลัยฮาร์วาร์ด
+          ในขณะนั้นนักศึกษาชายนี้พัฒนา FaceMash
+          เพื่อเป็นเกมการจับคู่รูปภาพของนักศึกษาที่มีลักษณะเหมือนกัน
+          โดยให้ผู้ใช้เลือกว่าคู่ภาพใดมีความน่าสนใจมากกว่า โดยการให้คะแนน
+          ในทำนองเดียวกับการทำคะแนนทางเพศ (Hot or Not)
+          ที่เป็นที่นิยมในช่วงเวลานั้น.</span
+        >
+      </div>
+    </div>
+  </div>
+  <section>
+    <app-versus-section />
+    <app-horizontal-images />
+    <app-about-us />
+  </section>
+  <app-footer />
+</div>

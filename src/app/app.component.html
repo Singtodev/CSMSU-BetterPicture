@@ -1,1 +1,10 @@
-<router-outlet />
+<main class="relative">
+  <router-outlet></router-outlet>
+  <button
+  (click)="goToTop()"
+  *ngIf="showButtonGoTop"
+    class="fixed bottom-10 right-10 bg-slate-600 text-white p-4 rounded-md transition-all duration-300"
+  >
+    Top
+  </button>
+</main>

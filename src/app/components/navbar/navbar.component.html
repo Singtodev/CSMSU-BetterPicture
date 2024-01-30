@@ -1,0 +1,43 @@
+<div
+  class="w-full shadow-2xl min-h-[80px] h-[80px] transition-all duration-300 flex justify-center items-center"
+>
+  <div class="max-w-[80rem] w-full h-full flex items-center justify-between">
+    <div (click)="goToPage('/')" class="cursor-pointer px-2 md:px-0">FaceMash</div>
+    <div
+      class="md:max-w-[38rem] w-full h-full flex justify-end md:justify-between gap-x-4 items-center"
+    >
+      <div class="md:flex flex-row gap-x-4 font-light text-sm hidden">
+        <div
+          (click)="goToPage(item.path)"
+          *ngFor="let item of pages; let i = index"
+          [ngClass]="{
+            'bg-black text-white': activeIndex === i
+          }"
+          class="cursor-pointer hover:bg-black hover:text-white px-3 rounded-xl"
+        >
+          {{ item.name_th }}
+        </div>
+      </div>
+      <div
+      (click)="goToPage('login')"
+      class="bg-black hover:transition-all duration-300 ease-in-out cursor-pointer hover:bg-opacity-70 text-white p-1 px-4 mx-2 md:mx-0 md:p-1 md:px-6 rounded-2xl flex flex-row items-center gap-x-2">
+        <span>
+          <svg
+            width="14"
+            height="14"
+            viewBox="0 0 9 10"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M1.5 0.5C0.671575 0.5 0 1.17158 0 2V8C0 8.82845 0.671575 9.5 1.5 9.5H7C7.27615 9.5 7.5 9.27615 7.5 9C7.5 8.72385 7.27615 8.5 7 8.5H1.5C1.22386 8.5 1 8.27615 1 8V2C1 1.72386 1.22386 1.5 1.5 1.5H7C7.27615 1.5 7.5 1.27614 7.5 1C7.5 0.72386 7.27615 0.5 7 0.5H1.5ZM6.35355 2.64645C6.1583 2.45118 5.8417 2.45118 5.64645 2.64645C5.4512 2.84171 5.4512 3.15829 5.64645 3.35356L6.7929 4.5H2.5C2.22386 4.5 2 4.72385 2 5C2 5.27615 2.22386 5.5 2.5 5.5H6.7929L5.64645 6.64645C5.4512 6.8417 5.4512 7.1583 5.64645 7.35355C5.8417 7.5488 6.1583 7.5488 6.35355 7.35355L8.35355 5.35355C8.5488 5.1583 8.5488 4.8417 8.35355 4.64645L6.35355 2.64645Z"
+              fill="white"
+            /></svg
+        ></span>
+        <span>เข้าสู่ระบบ</span>
+      </div>
+    </div>
+  </div>
+</div>
